@@ -63,7 +63,7 @@ public class GeneratorSplitterListener {
                 return;
             }
 
-            player.getWorld().getNearbyEntities(player.getLocation(), 3, 3, 3)
+            player.getWorld().getNearbyEntities(player.getLocation(), 6, 6, 6)
                     .stream()
                     .filter(entity -> !entity.equals(player))
                     .filter(entity -> entity instanceof Player)
